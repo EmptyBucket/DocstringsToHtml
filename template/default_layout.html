@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+          .container {
+            margin-top: 10px;
+          }
+          .panel {
+            box-shadow: none !important;
+          }
+        </style>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>
+          $(".spoiler-trigger").click(function() {
+              $(this).parent().next().collapse('toggle');
+            });
+        </script>
+    </head>
+    <body>
+        <h2>{{header}}</h2>
+        {{{data}}}
+    </body>
+</html>

@@ -1,0 +1,19 @@
+DocstringsToHTML
+	dokstring translates Python Python documentation 
+	from the input file to the output html file with 
+	the complete hierarchy structure Python file. 
+	Using hyperlinks of a hierarchical structure for documentation.
+
+Used class batch mode:
+	DocstringsToHTML(object)
+And use the following methods:
+	translate(self, pathHtmlFile)
+	to translate Python dokstrigs in html
+
+Used class batch mode:
+	DocModule(object)
+And use the following methods:
+	getListNode(self)
+	to extract the Python documentation preserving hierarchy
+	
+	

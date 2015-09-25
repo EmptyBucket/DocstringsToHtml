@@ -1,0 +1,21 @@
+<head>
+    <script>
+      $(".spoiler-trigger").click(function() {
+          $(this).parent().next().collapse('toggle');
+        });
+    </script>
+</head>
+<body>
+    <div class="container" style="margin-left: {{offset}}em">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <button type="button" class="btn btn-default btn-xs spoiler-trigger" data-toggle="collapse">{{header}}</button>
+        </div>
+        <div class="panel-collapse collapse out">
+          <div class="panel-body">
+            <PRE>{{{doc}}}</PRE>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
